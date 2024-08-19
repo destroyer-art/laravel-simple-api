@@ -10,16 +10,16 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
+use App\Models\Submission;
+
 class SubmissionSaved
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    /**
-     * Create a new event instance.
-     */
-    public function __construct()
+    public $submission;
+    public function __construct(Submission $submission)
     {
-        //
+        $this->submission = $submission;
     }
 
     /**
