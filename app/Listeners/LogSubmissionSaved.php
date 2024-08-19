@@ -20,7 +20,7 @@ class LogSubmissionSaved
     /**
      * Handle the event.
      */
-    public function handle(SubmissionSaved $event): void
+    public function handle(SubmissionSaved $event)
     {
         \Log::info('Submission saved:   ', [
             "name" => $event->submission->name,
