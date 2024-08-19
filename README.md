@@ -5,6 +5,7 @@
 1. Clone the repository.
     ```
     git clone https://github.com/destroyer-art/laravel-simple-api.git
+    cd laravel-simple-api
     ```
 2. Run `composer install`.
 3. Set up your `.env` file with database credentials.
